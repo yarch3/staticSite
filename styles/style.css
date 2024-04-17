@@ -1,0 +1,74 @@
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 180px;
+
+}
+
+div {
+    font-family: "Arial Black", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.social {display: inline-block;}
+.social a {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	color: #000;
+	background: #fff;
+	border: none;
+	border-radius: 24px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+}
+.social a:hover {color: #fff;}
+.social svg {
+	margin-bottom: 3px;
+	width: 32px;
+	height: 32px;
+}
+#github :hover {background: #191919;}
+#telegram :hover {background: #249bd7;}
+#vk :hover {background: #4a76a8;}
+
+body {
+	background-color:#bc97d5;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.contacts {
+    display: flex;
+   flex-direction: row;
+}
+.floating-image {
+    position: absolute;
+    top: -100px; /* начальное положение за верхней границей экрана */
+    height: 340px;
+    width: 200px;
+}
+#omnom {
+    z-index: -1;
+    width: 300px;
+    height: 318px;
+    position: fixed;
+    bottom: -270px;
+    background-image: url("img/cat.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: bottom 0.5s ease
+}
